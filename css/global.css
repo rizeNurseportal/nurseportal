@@ -1,0 +1,70 @@
+﻿body
+{
+	background-image: url(../images/frontend/master/bg.png);
+	background-repeat: repeat-x;
+	background-color: #ffffff;
+	font-family: Arial;
+	font-size: 12px;
+	overflow-x: hidden;
+}
+
+a
+{
+	color: #233d7d;
+    outline:none;
+    display: inline !important;
+}
+
+img
+{
+	border: 0;
+}
+
+h1
+{
+	color: #233d7d;
+	font-size: 15px;
+}
+
+h2
+{
+	color: #233d7d;
+	font-size: 15px;
+}
+
+p
+{
+	font-size: 12px;
+	line-height: 15px;
+	color: #555555;
+}
+
+span
+{
+	font-size: 12px;
+	line-height: 15px;
+	color: #555555;
+}
+
+ul
+{
+	font-size: 12px;
+	line-height: 15px;
+	color: #555555;	
+}
+
+sup
+{
+    line-height: 0;    
+}
+
+textarea
+{
+	/* resize: none; */
+	overflow: hidden;
+}
+
+/*23-2-15*/
+.Plasmapheresis {
+  color: #0ca848;
+}

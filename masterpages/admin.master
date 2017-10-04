@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="masterpages_admin" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Admin</title>
+	<link rel="Stylesheet" type="text/css" href="~/css/admin.css" runat="server" />		
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+	<telerik:RadScriptManager ID="scriptManager" runat="server">
+	</telerik:RadScriptManager>
+	<telerik:RadFormDecorator ID="decorator" runat="server" Skin="Default" DecoratedControls="Buttons" />
+    <div id="wrapper">
+		<telerik:RadMenu ID="menu1" runat="server" Width="100%" Skin="Black">
+			<Items>
+				<telerik:RadMenuItem Text="Manage">
+					<Items>
+						<telerik:RadMenuItem Text="Pending Registrations" Value="userlist" NavigateUrl="~/admin/pendingusers.aspx"></telerik:RadMenuItem>
+                    </Items>
+                </telerik:RadMenuItem>
+				<telerik:RadMenuItem Text="Reports">
+					<Items>
+						<telerik:RadMenuItem Text="Registration" Value="userlist" NavigateUrl="~/admin/userlist.aspx"></telerik:RadMenuItem>
+                        <telerik:RadMenuItem Text="Evaluation" Value="userlist" NavigateUrl="~/admin/evaluationlist.aspx"></telerik:RadMenuItem>
+                        <telerik:RadMenuItem Text="Accreditation" Value="userlist" NavigateUrl="~/admin/testlist.aspx"></telerik:RadMenuItem>
+                        <telerik:RadMenuItem Text="Pretest" Value="pretestlist" NavigateUrl="~/admin/pretestlist.aspx"></telerik:RadMenuItem>
+                        <telerik:RadMenuItem Text="Benchmarking Survey" Value="benchmarksurvey" NavigateUrl="~/admin/benchmarksurvey.aspx"></telerik:RadMenuItem>
+					</Items>
+				</telerik:RadMenuItem>
+				<telerik:RadMenuItem Text="Logoff" NavigateUrl="~/admin/logoff.aspx">
+				</telerik:RadMenuItem>
+			</Items>
+		</telerik:RadMenu>
+		<div id="content">
+			<asp:ContentPlaceHolder id="contentMain" runat="server">
+        
+			</asp:ContentPlaceHolder>
+		</div>
+    </div>
+    </form>
+</body>
+</html>

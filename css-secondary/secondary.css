@@ -1,0 +1,1157 @@
+﻿/****************************************************************************
+ * secondary.css
+ * This file is dedicated for mindfire developers.
+ * Any additional style or any style which is overridden by style defined in
+ * content.css is declared here.
+ * Created On: 13th December, 2012
+ * Created By: Tyler
+*****************************************************************************/
+/***** MASTER PAGE STYLE ***********/
+/*INPROGRESS, Will be committed when needed.*/
+body div.wrapper
+{
+    border: 1px solid #333333;
+    box-shadow: 0 0 10px 0 #333333;
+}
+#DropDownList1 {
+    border: medium none;
+    width: 125px;
+
+}
+.header .toplinks .linklist li
+{
+    font-size: 11px;
+    height: 10px;
+    padding:0 20px 7px 8px;
+}
+
+h2, h3
+{
+    margin-bottom: -5px;
+}
+
+.landingpage h2, h3
+{
+    padding-top: 10px;
+}
+
+.modulecontent .landingpage p.modlandingcntbtn
+{
+    text-align: right;
+}
+
+.modulecontent div.reflectivelearning h2
+{
+    margin: 0;
+    height: auto;
+    padding: 0;
+}
+
+.modulecontent div.keypoint
+{
+    margin: 10px 0 20px 25px;
+}
+
+div.leftimage, div.centeredimage
+{
+    margin-bottom: 20px;
+}
+
+.modulecontent div.keypoint ol li
+{
+    margin: 10px 0;
+}
+
+.modulecontent div.keypoint ul
+{
+    list-style-type: disc;
+    margin: 0;
+}
+
+.modulecontent ul li ul, .modulecontent table ul
+{
+    /*list-style-type: inherit;*/
+    margin: 0;
+}
+
+.modulecontent ul li ul.lessheight li, .modulecontent ol li ul.lessheight li
+{
+    margin: 0;
+}
+
+div.centeredimage span.figcaption
+{
+    font-size: 11px;
+    font-style: italic;
+    margin: 5px 0;
+    padding: 0;
+    text-align: left;
+}
+
+td.tblcaption
+{
+    background-color: #FFFFFF !important;
+    color: #555555;
+    font-style: italic;
+}
+
+.quiz label
+{
+    margin-left: 10px;
+}
+
+div.accrcontbutton, div.evalsubbtn
+{
+    text-align: right;
+}
+
+div.evalsubbtn
+{
+    margin-top: 20px;
+}
+
+.quiz .test-results p
+{
+    font-weight: normal;
+}
+
+/***** END OF MASTER PAGE STYLE ***********/
+
+/***** MODULE PAGE STYLE ***********/
+
+.module3page table tbody li
+{
+    color: #F08A21;
+}
+
+.module3page table tbody ol li
+{
+    color: #555;
+}
+
+.deepdivepopup .module4page table thead tr td
+{
+    background-color: #0ca848;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 15px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+
+.deepdivepopup .module4page p.figure
+{
+    color: #555555;
+    font-style: italic;
+    font-size: 11px;
+    line-height: 15px;
+    width: 80%;
+    text-align: left;
+}
+
+.deepdivepopup .module4page table tbody td
+{
+    background-color: #dbdaea;
+    padding: 10px 10px 10px 10px;
+    margin: 0;
+}
+
+div.deepdivepopup .module4page table tbody td.alternate
+{
+    background-color: #b3b3ce;
+}
+
+.module4page table tbody td.highlight
+{
+    background-color: #243874 !important;
+    color: #ffffff;
+}
+
+.module3page table.score tbody td.highlight
+{
+    background-color: #243874 !important;
+    color: #ffffff;
+    width: 52px;
+}
+
+div.checkpointpopup
+{
+    background-color: #FFFFFF;
+    border: 2px solid #233D7D;
+    color: #233D7D;
+    display: none;
+    max-width: 700px;
+    min-width: 500px;
+    padding: 25px 25px 25px 0;
+    position: fixed;
+    left: 26%;
+    top: 130px;
+    right: 135px;
+    z-index: 9999;
+}
+
+div.checkpointpopup .btnclose
+{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.modulecontent div.checkpoint
+{
+    background-image: url("../images/frontend/global/ico_questions.png");
+    background-repeat: no-repeat;
+    margin-left: 25px;
+    min-height: 31px;
+    padding-left: 50px;
+}
+
+.evaluation-form h2
+{
+    padding-left: 0;
+}
+.modulecontent .evaluation-form p
+{
+    padding: 0;
+}
+.modulecontent .evaluation-form table
+{
+    margin: 0;
+}
+
+.module1page .evaluation-form table span.quizhiddentext
+{
+    color: #D80B73;
+}
+
+.module2page .evaluation-form table span.quizhiddentext
+{
+    color: #EE4023;
+}
+
+.module3page .evaluation-form table span.quizhiddentext
+{
+    color: #F08A21;
+}
+
+.module4page .evaluation-form table span.quizhiddentext
+{
+    color: #0CA848;
+}
+
+.module5page .evaluation-form table span.quizhiddentext
+{
+    color: #00ADAC;
+}
+
+
+.module6page .evaluation-form table span.quizhiddentext
+{
+    color: #e1d538;
+}
+
+
+.evaluation-form table textarea
+{
+    vertical-align: middle;
+}
+
+
+.quiz table.multiple-choice-list
+{
+    clear: both;
+}
+
+div.quiz div.quizQuestion table.multiple-choice-list input
+{
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+
+div.quiz div.quizQuestion table.multiple-choice-list label div.quesradio, div.quiz div.quizQuestion table.multiple-choice-list label div.quesoption, div.quiz div.quizQuestion div.quesnumber, div.quiz div.quizQuestion div.questext
+{
+    float: left;
+}
+
+div.quiz div.quizQuestion div.questext
+{
+    clear: right;
+    width: 97%;
+}
+
+div.quesradio
+{
+    width: 2%;
+}
+
+div.quiz div.quizQuestion table.multiple-choice-list label div.quesoption
+{
+    padding-left: 5px;
+    width: 90%;
+}
+
+div.quiz div.quizQuestion table.multiple-choice-list label div.quesradio, div.quiz div.quizQuestion div.quesnumber, div.quiz div.quizQuestion div.questext
+{
+    font-weight: bold;
+}
+
+
+div.quiz div.quizQuestion div.quesnumber
+{
+    margin-left: -15px;
+    padding-right: 5px;
+}
+
+/***** MODULE PAGE STYLE END ***********/
+
+/****** ACCREDITATION STYLE**********/
+.module2page .test-results
+{
+    border-color: #EE4023;
+}
+
+.module3page .test-results
+{
+    border-color: #F08A21;
+}
+
+.module4page .test-results
+{
+    border-color: #0CA848;
+}
+
+.module5page .test-results
+{
+    border-color: #00ADAC;
+}
+
+
+.module6page .test-results
+{
+    border-color: #e1d538;
+}
+
+
+
+.test-results
+{
+    padding: 30px 0 15px 100px;
+}
+
+img.posttesticon
+{
+    margin-left: -90px;
+    margin-top: -15px;
+}
+/****** END ACCREDITATION STYLE**********/
+
+/**************************LOGIN SPECIFIC STYLES**************************/
+.login-right
+{
+    height: 465px;
+}
+.loginbox
+{
+    height: 370px;
+    width: auto;
+    border: 0 solid #233D7D;
+    padding: 0;
+}
+
+.loginContainer
+{
+    background-color: #DBDAEA;
+    border: 1px solid #243874;
+    color: #6666FF;
+    height: 370px;
+    width: 957px;
+}
+
+.newUserContainer
+{
+    border-right: 1px solid #243874;
+    float: left;
+    height: 370px;
+    margin-left: 40px;
+    width: 358px;
+}
+
+#lbtnNewUser
+{
+    margin-left: 90px;
+    margin-top: 130px;
+}
+
+.loginControls
+{
+    float: left;
+    height: 370px;
+    width: 538px;
+}
+
+.loginbox table
+{
+    margin-top: 40px;
+    padding-left: 53px;
+}
+
+.loginbox table td
+{
+    color: #243874;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+}
+.loginbox .txt
+{
+    width: 390px;
+}
+/*width: 390px;     */
+.wrongPassword, .regSuccessPanel
+{
+    background-repeat: no-repeat;
+    height: 291px;
+    margin-left: 99px;
+    margin-top: 65px;
+    padding-top: 40px;
+    text-align: center;
+    width: 760px;
+}
+.wrongPassword
+{
+    background-image: url(../images/frontend/content/loginregister/popup_login.png);
+}
+.regSuccessPanel
+{
+    background-image: url(../images/frontend/content/loginregister/popup_thankyou.png);
+}
+.wrongPassword .msgWrongCredential, .regSuccessPanel .msgThanks
+{
+    color: #243874;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-bottom: 15px;
+    margin-top: 45px;
+    position: relative;
+}
+.wrongPassword .forgotRegisterTxt
+{
+    color: gray;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+}
+.lbtnContinue
+{
+    float: right;
+    position: relative;
+    right: 55px;
+    top: 85px;
+}
+
+.forgotPassPanel
+{
+    background-color: #DBDAEA;
+    border: 1px solid #243874;
+    height: 250px;
+    display: none;
+    padding: 70px 40px 50px 40px;
+}
+
+.forgotPassPanel table
+{
+    width: 100%;
+    margin-top: 0px;
+    padding-left: 0px;
+}
+.forgotPassPanel table .forgotEmailText
+{
+    color: #243874;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+}
+/********************* END LOGIN SPECIFIC STYLES **********************/
+
+/********************* REGISTER SPECIFIC STYLES **********************/
+.registrationPage
+{
+    padding: 0 18px;
+}
+.registrationPage .valmessage
+{
+    color: Red;
+    display: none;
+}
+
+.subheadlines
+{
+    color: Gray;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tableText, .questionNumber
+{
+    color: #243874;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.shortSurvey .tableText, .questionNumber
+{
+    font-size: 12px;
+    color: #243874;
+    font-weight: normal;
+}
+
+.questionNumber
+{
+    font-weight: bold;
+}
+
+.registrationPage table.regdata, div.contactpage table#tblContact
+{
+    background-color: #DBDAEA;
+    border: 1px solid #243874;
+    margin-bottom: 18px;
+    padding: 20px 0 10px;
+    width: 100%;
+}
+.registrationPage table.regdata td
+{
+    padding: 0 40px 15px 30px;
+    width: 50%;
+}
+
+.registrationPage table.regpretest
+{
+    background-color: #DBDAEA;
+    border: 1px solid #243874;
+    margin-bottom: 18px;
+    padding: 20px 0 10px;
+    width: 100%;
+    color: #243874 !important;    
+}
+.registrationPage table.regpretest label
+{
+    color: #243874 !important;    
+}
+
+.radioYes table td
+{
+    padding: 0 !important;
+}
+.usernamePassword table
+{
+    height: 150px;
+}
+
+.personalData table
+{
+    height: 360px;
+}
+
+select.lang
+{
+    margin-left: -3px;
+}
+.shortSurvey table#shortsurveydata
+{
+    height: 570px;
+}
+.shortSurvey table .prctSymbol
+{
+    display: block;
+    float: right;
+    padding-left: 5px;
+    width: 20px;
+}
+table .txtInput
+{
+    float: right;
+    margin-top: -10px;
+    width: 98%;
+}
+table .que8
+{
+    margin-top: -5px;
+    width: 50% !important;
+}
+.shortSurvey table .txtInput
+{
+    text-align: right;
+    width: 90%;
+}
+.registrationPage table td .radioYes
+{
+    float: left;
+}
+
+.radioYes, .radioYes label
+{
+    margin-left: 10px;
+}
+
+.otherprofbox
+{
+    display: none;
+    width: 152px;
+}
+
+div.termsRegHeading
+{
+    color: #243874;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+div.termsofuse ol
+{
+    color: Grey;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+div.termsofuse ol li span
+{
+    font-weight: normal;
+}
+
+.regButton
+{
+    text-align: right;
+}
+
+.regSuccessPanel .msgThanks2nd
+{
+    font-weight: normal;
+}
+
+/********************* END REGISTER SPECIFIC STYLES **********************/
+
+/********************* CLINICAL CASE STYLES **********************/
+.clinicianscreen h1 + div.centeredimage
+{
+    background-image: url(../images/frontend/global/ico_clinical_cases.png); 
+    background-repeat: no-repeat;
+    background-position: 10px 0;
+}
+
+.cliniciancase
+{
+    font-family: Arial;
+}
+
+.cliniciancase h2
+{
+    height: 12px;
+    margin-bottom: 0 !important;
+    padding-top: 10px;
+}
+
+.cliniciancasescenarios
+{
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.cliniciansubhead, .cliniciansubhead p
+{
+    color: #D80B73 !important;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.casebodytext
+{
+    color: Gray;
+    font-size: 11px;
+}
+
+.modulecontent .cliniciancase table td.leftnarrowcolumn
+{
+    border-right: 5px solid #FFF;
+}
+
+
+.modulecontent .module1page .cliniciancase table thead tr td, .modulecontent .module2page .cliniciancase table thead tr td, .modulecontent .module3page .cliniciancase table thead tr td, .modulecontent .module4page .cliniciancase table thead tr td, .modulecontent .module5page .cliniciancase table thead tr td, .modulecontent .module6page .cliniciancase table thead tr td
+{
+    color: White;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.modulecontent .module1page .cliniciancase table thead tr td
+{
+    background-color: #D80B73;
+}
+.modulecontent .module2page .cliniciancase table thead tr td
+{
+    background-color: #EE4023;
+}
+.modulecontent .module3page .cliniciancase table thead tr td
+{
+    background-color: #F08A21;
+}
+.modulecontent .module4page .cliniciancase table thead tr td
+{
+    background-color: #0CA848;
+}
+.modulecontent .module5page .cliniciancase table thead tr td
+{
+    background-color: #00ADAC;
+}
+
+.modulecontent .module6page .cliniciancase table thead tr td
+{
+    background-color: #e1d538;
+}
+
+.module1page div.cliniciancase table tbody tr td, div.cliniciancase td.alternate
+{
+    background-color: #fae6f0;
+}
+.module2page div.cliniciancase table tbody tr td, div.cliniciancase td.alternate
+{
+    background-color: #fdecec;
+}
+.module3page div.cliniciancase table tbody tr td, div.cliniciancase td.alternate
+{
+    background-color: #feeee4;
+}
+.module4page div.cliniciancase table tbody tr td, div.cliniciancase td.alternate
+{
+    background-color: #d9f3e0;
+}
+.module5page div.cliniciancase table tbody tr td, div.cliniciancase td.alternate
+{
+    background-color: #dcf7f6;
+}
+
+
+.module6page div.cliniciancase table tbody tr td, div.cliniciancase td.alternate
+{
+    background-color: #dcf7f6;
+}
+
+.questionradio
+{
+    clear: left;
+    display: block;
+    float: left;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.questionoption
+{
+    clear: right;
+    display: block;
+    float: left;
+    font-size: 11px;
+    font-family: Arial;
+    height: 100%;
+    margin-left: 10px;
+    width: 80%;
+}
+.answerhead
+{
+    display: block;
+    font-size: 11px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.queseubmit, .contactsubmit
+{
+    clear: both;
+    display: block;
+    float: right;
+    margin-top: 15px;
+}
+.contactsubmit
+{
+    margin-bottom: 20px;
+    margin-right: 150px;
+}
+
+
+.cliniciancase ol
+{
+    margin-left: 0;
+}
+.cliniciancase ol li
+{
+    margin: 10px 0 0;
+}
+.cliniciancase ol li span
+{
+    line-height: 17px;
+    font-weight: normal;
+}
+.module1page .cliniciancase .correctanswerpopup, .module1page .cliniciancase .wronganswerpopup, .module2page .cliniciancase .correctanswerpopup, .module2page .cliniciancase .wronganswerpopup, .module3page .cliniciancase .correctanswerpopup, .module3page .cliniciancase .wronganswerpopup, .module4page .cliniciancase .correctanswerpopup, .module4page .cliniciancase .wronganswerpopup, .module5page .cliniciancase .correctanswerpopup, .module5page .cliniciancase .wronganswerpopup, .module6page .cliniciancase .correctanswerpopup, .module6page .cliniciancase .wronganswerpopup
+{
+    height: 340px;
+    left: 37%;
+    opacity: 0.99;
+    position: absolute;
+    text-align: left;
+    top: 46%;
+    width: 552px;
+}
+
+.modulecontent .checkpointpopup .correctanswerpopup, .modulecontent .checkpointpopup .wronganswerpopup
+{
+    display: none;
+}
+
+.modulecontent .checkpointpopup .correctanswerpopup
+{
+    left: 86px;
+    top: 10%;
+}
+
+.module1page .cliniciancase .correctanswerpopup
+{
+    background-repeat: no-repeat;
+    background-image: url("../images/frontend/content/clinical_cases/popup_cases_m1.png");
+}
+.module2page .cliniciancase .correctanswerpopup
+{
+    background-repeat: no-repeat;
+    background-image: url("../images/frontend/content/clinical_cases/popup_cases_m2.png");
+}
+.module3page .cliniciancase .correctanswerpopup
+{
+    background-repeat: no-repeat;
+    background-image: url("../images/frontend/content/clinical_cases/popup_cases_m3.png");
+}
+.module4page .cliniciancase .correctanswerpopup
+{
+    background-repeat: no-repeat;
+    background-image: url("../images/frontend/content/clinical_cases/popup_cases_m4.png");
+}
+.module5page .cliniciancase .correctanswerpopup
+{
+    background-repeat: no-repeat;
+    background-image: url("../images/frontend/content/clinical_cases/popup_cases_m5.png");
+}
+
+.module6page .cliniciancase .correctanswerpopup
+{
+    background-repeat: no-repeat;
+    background-image: url("../images/frontend/content/clinical_cases/popup_cases_m6.png");
+}
+.module1page .cliniciancase .wronganswerpopup, .module2page .cliniciancase .wronganswerpopup, .module3page .cliniciancase .wronganswerpopup, .module4page .cliniciancase .wronganswerpopup, .module5page .cliniciancase .wronganswerpopup, .module6page .cliniciancase .wronganswerpopup
+{
+    background-color: White;
+    border: solid 6px #D80B73;
+    left: 30%;
+    width: 675px;
+}
+
+.modulecontent div.checkpointpopup .wronganswerpopup
+{
+    height: 340px;
+    left: 75px;
+    top: 25px;
+    width: 562px;
+}
+
+.module1page .cliniciancase .wronganswerpopup
+{
+    border: solid 6px #D80B73;
+}
+.module2page .cliniciancase .wronganswerpopup
+{
+    border: solid 6px #EE4023;
+}
+.module3page .cliniciancase .wronganswerpopup
+{
+    border: solid 6px #F08A21;
+}
+.module4page .cliniciancase .wronganswerpopup
+{
+    border: solid 6px #0CA848;
+}
+.module5page .cliniciancase .wronganswerpopup
+{
+    border: solid 6px #00ADAC;
+}
+
+
+.module6page .cliniciancase .wronganswerpopup
+{
+    border: solid 6px #e1d538;
+}
+
+.cliniciancase .btnclose
+{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.anspopuptext div
+{
+    margin-left: 60px;
+    margin-top: 20px;
+    position: relative;
+    text-align: left;
+    width: 80%;
+}
+
+
+div.ansincongtmsg .crtanssuggest
+{
+    font-weight: bold;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.anspopuptext div.congratstext
+{
+    color: #D80B73;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.cliniciancase td.casequestion
+{
+    /*font-weight: bold;*/
+}
+/*
+.module1page .cliniciancase td.casequestion
+{
+    background-color:  #F4CEE5;
+}
+.module2page .cliniciancase td.casequestion
+{
+    background-color:  #FCD9D9;
+}
+.module3page .cliniciancase td.casequestion
+{
+    background-color:  #FEDECA;
+}
+.module4page .cliniciancase td.casequestion
+{
+    background-color:  #B3E8C2;
+}
+.module5page .cliniciancase td.casequestion
+{
+    background-color:  #B9EFED;
+}
+*/
+.module1page .anspopuptext div.congratstext
+{
+    color: #D80B73 !important;
+}
+.module2page .anspopuptext div.congratstext
+{
+    color: #EE4023 !important;
+}
+.module3page .anspopuptext div.congratstext
+{
+    color: #F08A21 !important;
+}
+.module4page .anspopuptext div.congratstext
+{
+    color: #0CA848 !important;
+}
+.module5page .anspopuptext div.congratstext
+{
+    color: #00ADAC !important;
+}
+
+.module6page .anspopuptext div.congratstext
+{
+    color: #e1d538 !important;
+}
+
+.anspopuptext div.ansincongtmsg
+{
+    color: Gray;
+    font-size: 13px;
+}
+
+
+.failicon
+{
+    bottom: 10px;
+    left: 10px;
+    position: absolute;
+    width: 75px;
+    height: 73px;
+}
+
+.module1page .failicon
+{
+    background-image: url(../images/frontend/content/clinical_cases/icon_cases_m1.png);
+}
+
+.module2page .failicon
+{
+    background-image: url(../images/frontend/content/clinical_cases/icon_cases_m2.png);
+}
+
+.module3page .failicon
+{
+    background-image: url(../images/frontend/content/clinical_cases/icon_cases_m3.png);
+}
+
+.module4page .failicon
+{
+    background-image: url(../images/frontend/content/clinical_cases/icon_cases_m4.png);
+}
+
+.module5page .failicon
+{
+    background-image: url(../images/frontend/content/clinical_cases/icon_cases_m5.png);
+}
+
+.module6page .failicon
+{
+    background-image: url(../images/frontend/content/clinical_cases/icon_cases_m6.png);
+}
+.cliniciancase .btncont
+{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+/********************* CLINICAL CASE STYLES END **********************/
+
+/******************* CONTACT US STYLE START **************************/
+div.contactpage table#tblContact td.contactuslefttext
+{
+    color: #243874;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 25px;
+}
+
+div.contactpage table#tblContact td .contactusrightdata
+{
+    height: 24px;
+    width: 510px;
+}
+
+div.techinquery h2
+{
+    color: #243874 !important;
+}
+/******************* CONTACT US STYLE END **************************/
+
+/******************* Committee Page Styles **************************/
+
+div.committeepages h2, div.committeepages h3, div.committeebio h2, div.committeebio h3, div.glossary-wrapper h2
+{
+    margin-bottom: 15px;
+}
+
+div.committeepages ul.committeeList h2, div.committeebio h2
+{
+    font-size: 14px;
+}
+
+div.committeepages ul.committeeList li
+{
+    margin-right: 0;
+}
+
+div.committeepages ul.committeeList li.middleitem
+{
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+div.committeepages ul.committeeList img
+{
+    border-color: #505589;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 14px;
+}
+
+div.committeepages ul.committeeList span.memberMetaData
+{
+    display: block;
+    margin-top: -10px;
+}
+
+div.committeepages ul.committeeList div.description
+{
+    height: 110px;
+}
+
+div.committeepages ul.committeeList div.description div.topNamePost
+{
+    height: auto;
+}
+
+div.committeepages span.accreditation
+{
+    font-size: 10px;
+}
+
+div.committeepages .committeeList a
+{
+    float: right;
+    font-size: 9px;
+}
+
+div.committeebio p b
+{
+    color: #233D7D;
+}
+
+/******************* Committee Page Styles END **************************/
+
+/******************* Accreditation Page Styles END **************************/
+.accreditationwrapper
+{
+    width: 100%;
+}
+.accreditationwrapper h2
+{
+    color: #233D7D;
+    margin-top: 20px;
+}
+.accreditationwrapper .downloadcertificate
+{
+    text-align: center;
+}
+/******************* Committee Page Styles END **************************/
+
+/******************* Module-2 Page Styles START **************************/
+
+.span-spc li{
+color:#555555;
+font-size:12px; 
+list-style-image:url("../secure/modules/module2/images/list-style.png");
+line-height:22px;
+list-style-position:outside;
+margin-left:19px;
+
+}
+
+ .committeeList .commit {
+  height: 250px;
+}
+ .radioYes {
+  width: 417px;
+}
+

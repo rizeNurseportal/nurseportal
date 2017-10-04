@@ -1,0 +1,235 @@
+﻿.sectionnav
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    height:450px;
+    overflow-y:scroll;
+}
+
+.sectionnav li
+{
+    background-color: #e1e6f0;
+    padding: 5px 5px 5px 20px;
+    position: relative;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+}
+
+.sectionnav li a
+{
+    color: #505589;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.sectionnav li.selected a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sectionnav li .bar
+{
+    background-color: #d80b73;
+    width: 10px;  
+    height: 100%; 
+    position: absolute;
+    left: 0;
+    top: 0; 
+}
+
+.sectionnav li.selected .bar
+{
+    background-color: #505589; 
+    width: 10px;      
+}
+
+.sectionnav li .icon
+{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/frontend/master/nav_arrow_left.png);
+    background-repeat: no-repeat;       
+}
+
+.sectionnav li.selected .icon
+{
+    background-image: url(../images/frontend/master/nav_arrow_down_selected.png);
+}
+
+.sectionnav li.subsection
+{
+    background-color: #ffffff;
+    margin: 0 0 0 0;
+    border-bottom: 1px solid #505589;
+}
+
+.sectionnav li.lastsubsection
+{
+    border-bottom: 0;
+}
+
+.sectionnav li.subsection ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sectionnav li.subsection ul li
+{
+    background-color: #ffffff;
+    margin: 0 0 0 10px;
+}
+
+.btn_print_download
+{
+	margin: 10px auto;
+}
+
+/*9-2-15*/
+#sectionnav-module2 li span {
+  color: #505589;
+  font-size: 11px;
+  padding-left: 18px;
+}
+
+ #sectionnav-module2 li ul li span {
+  color: #ee4023;
+  padding-left: 36px;
+}
+
+ #sectionnav-module3 li span {
+  color: #505589;
+  font-size: 11px;
+  padding-left: 18px;
+}
+
+ #sectionnav-module3 li ul li span {
+  color: #f08a21;
+  padding-left: 36px;
+}
+
+
+  #sectionnav-module4 li span {
+  color: #505589;
+  font-size: 11px;
+  padding-left: 18px;
+}
+  #sectionnav-module4 li ul li span {
+  color: #0ca848;
+  padding-left: 28px;
+}
+
+  /*12-2-15*/
+  #sectionnav-module4.sectionnav li.selected a span {
+  color: #fff !important;
+}
+
+    #sectionnav-module3.sectionnav li.selected a span {
+  color: #fff !important;
+}
+
+      #sectionnav-module2.sectionnav li.selected a span {
+  color: #fff !important;
+}
+
+   #sectionnav-module4 .selected > span{
+color:#0ca848 !important;
+}
+
+
+      #sectionnav-module3 .selected > span {
+  color: #f08a21;
+}
+
+      #sectionnav-module2 .selected > span {
+  color:  #ee4023;
+}
+
+
+
+
+/*.selected > span{
+color:#0ca848 !important;
+}*/
+
+
+#f08a21
+
+
+
+  /*.subsection ul {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.subsection ul li ul {
+  overflow: hidden;
+  height: auto;
+}*/
+
+
+
+/* module specific colors */
+
+#sectionnav-module1.sectionnav li.selected { background-color: #d80b73; }
+#sectionnav-module2.sectionnav li.selected { background-color: #ee4023; }
+#sectionnav-module3.sectionnav li.selected { background-color: #f08a21; }
+#sectionnav-module4.sectionnav li.selected { background-color: #0ca848; }
+#sectionnav-module5.sectionnav li.selected { background-color: #00adac; }
+
+#sectionnav-module6.sectionnav li.selected { background-color: #e1d538; }
+
+#sectionnav-module1.sectionnav li .bar { background-color: #d80b73; } 
+#sectionnav-module2.sectionnav li .bar { background-color: #ee4023; } 
+#sectionnav-module3.sectionnav li .bar { background-color: #f08a21; } 
+#sectionnav-module4.sectionnav li .bar { background-color: #0ca848; } 
+#sectionnav-module5.sectionnav li .bar { background-color: #00adac; } 
+
+#sectionnav-module6.sectionnav li .bar { background-color: #e1d538; } 
+
+#sectionnav-module1.sectionnav li.subsection a.selected,
+#sectionnav-module1.sectionnav li.subsection li a
+{
+    color: #d80b73;  
+}
+
+#sectionnav-module2.sectionnav li.subsection a.selected,
+#sectionnav-module2.sectionnav li.subsection li a
+{
+    color: #ee4023;  
+}
+
+#sectionnav-module3.sectionnav li.subsection a.selected,
+#sectionnav-module3.sectionnav li.subsection li a
+{
+    color: #f08a21;  
+}
+
+#sectionnav-module4.sectionnav li.subsection a.selected,
+#sectionnav-module4.sectionnav li.subsection li a
+{
+    color: #0ca848;  
+}
+
+#sectionnav-module5.sectionnav li.subsection a.selected,
+#sectionnav-module5.sectionnav li.subsection li a
+{
+    color: #00adac;  
+}
+
+
+#sectionnav-module6.sectionnav li.subsection a.selected,
+#sectionnav-module6.sectionnav li.subsection li a
+{
+    color: #e1d538;  
+}
+

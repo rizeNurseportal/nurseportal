@@ -1,0 +1,283 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/masterpages/frontend.master" AutoEventWireup="true"
+	CodeFile="module.master.cs" Inherits="masterpages_module" %>
+
+<%@ Register Src="../commoncontrols/navigation/navModule1.ascx" TagName="navModule1"TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule1-es.ascx" TagName="navModule1_es" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule2.ascx" TagName="navModule2" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule2-es.ascx" TagName="navModule2_es" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule3.ascx" TagName="navModule3" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule3-es.ascx" TagName="navModule3_es" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule4.ascx" TagName="navModule4" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule4-es.ascx" TagName="navModule4_es" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule5.ascx" TagName="navModule5" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule5-es.ascx" TagName="navModule5_es" TagPrefix="uc1" %>
+
+<%@ Register Src="../commoncontrols/navigation/navModule6.ascx" TagName="navModule6" TagPrefix="uc1" %>
+<%--<%@ Register Src="../commoncontrols/navigation/navModule6-es.ascx" TagName="navModule6_es" TagPrefix="uc1" %>--%>
+
+<%@ Register Src="../commoncontrols/navigation/navModule1-de.ascx" TagName="navModule1_de" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule1-it.ascx" TagName="navModule1_it" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule2-de.ascx" TagName="navModule2_de" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule2-it.ascx" TagName="navModule2_it" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule3-de.ascx" TagName="navModule3_de" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule3-it.ascx" TagName="navModule3_it" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule4-de.ascx" TagName="navModule4_de" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule4-it.ascx" TagName="navModule4_it" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule5-de.ascx" TagName="navModule5_de" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule5-it.ascx" TagName="navModule5_it" TagPrefix="uc1" %>
+
+<%--<%@ Register Src="../commoncontrols/navigation/navModule6-de.ascx" TagName="navModule6_de" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule6-it.ascx" TagName="navModule6_it" TagPrefix="uc1" %>--%>
+
+<%@ Register Src="../commoncontrols/navigation/navModule1-cz.ascx" TagName="navModule1_cz" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule2-cz.ascx" TagName="navModule2_cz" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule3-cz.ascx" TagName="navModule3_cz" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule4-cz.ascx" TagName="navModule4_cz" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule5-cz.ascx" TagName="navModule5_cz" TagPrefix="uc1" %>
+
+<%--<%@ Register Src="../commoncontrols/navigation/navModule6-cz.ascx" TagName="navModule6_cz" TagPrefix="uc1" %>--%>
+
+<%@ Register Src="../commoncontrols/navigation/navModule1-fr.ascx" TagName="navModule1_fr"  TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule2-fr.ascx"  TagName="navModule2_fr" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule3-fr.ascx"  TagName="navModule3_fr" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule4-fr.ascx"  TagName="navModule4_fr" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule5-fr.ascx"  TagName="navModule5_fr" TagPrefix="uc1" %>
+
+<%--<%@ Register Src="../commoncontrols/navigation/navModule6-fr.ascx"  TagName="navModule6_fr" TagPrefix="uc1" %>--%>
+
+<%@ Register Src="../commoncontrols/navigation/navModule1-nl.ascx"  TagName="navModule1_nl" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule2-nl.ascx"  TagName="navModule2_nl" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule3-nl.ascx"  TagName="navModule3_nl" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule4-nl.ascx"  TagName="navModule4_nl" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule5-nl.ascx"  TagName="navModule5_nl" TagPrefix="uc1" %>
+
+<%--<%@ Register Src="../commoncontrols/navigation/navModule6-nl.ascx"  TagName="navModule6_nl" TagPrefix="uc1" %>--%>
+
+<%@ Register Src="../commoncontrols/navigation/navModule1-pl.ascx"  TagName="navModule1_pl" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule2-pl.ascx"  TagName="navModule2_pl" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule3-pl.ascx"  TagName="navModule3_pl" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule4-pl.ascx"  TagName="navModule4_pl" TagPrefix="uc1" %>
+<%@ Register Src="../commoncontrols/navigation/navModule5-pl.ascx"  TagName="navModule5_pl" TagPrefix="uc1" %>
+
+<%--<%@ Register Src="../commoncontrols/navigation/navModule6-pl.ascx"  TagName="navModule6_pl" TagPrefix="uc1" %>--%>
+
+<%@ Register Src="~/commoncontrols/navigation/navModule1-at.ascx" TagName="navModule1_at" TagPrefix="uc1" %>
+<%@ Register src="~/commoncontrols/navigation/navModule2-at.ascx" TagName="navModule2_at" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule3-at.ascx" TagName="navModule3_at" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule4-at.ascx" TagName="navModule4_at" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule5-at.ascx" TagName="navModule5_at" TagPrefix="uc1" %>
+
+<%--<%@ Register Src="~/commoncontrols/navigation/navModule6-at.ascx" TagName="navModule6_at" TagPrefix="uc1" %>--%>
+
+<%@ Register Src="~/commoncontrols/navigation/navModule1-sd.ascx" TagName="navModule1_sd" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule2-sd.ascx" TagName="navModule2_sd" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule3-sd.ascx" TagName="navModule3_sd" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule4-sd.ascx" TagName="navModule4_sd" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule5-sd.ascx" TagName="navModule5_sd" TagPrefix="uc1" %>
+
+<%--<%@ Register Src="~/commoncontrols/navigation/navModule6-sd.ascx" TagName="navModule6_sd" TagPrefix="uc1" %>--%>
+
+<%@ Register Src="~/commoncontrols/navigation/navModule1-sf.ascx" TagName="navModule1_sf" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule2-sf.ascx" TagName="navModule2_sf" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule3-sf.ascx" TagName="navModule3_sf" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule4-sf.ascx" TagName="navModule4_sf" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule5-sf.ascx" TagName="navModule5_sf" TagPrefix="uc1" %>
+
+<%--<%@ Register Src="~/commoncontrols/navigation/navModule6-sf.ascx" TagName="navModule6_sf" TagPrefix="uc1" %>--%>
+
+<%@ Register Src="~/commoncontrols/navigation/navModule1-bf.ascx" TagName="navModule1_bf" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule2-bf.ascx" TagName="navModule2_bf" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule3-bf.ascx" TagName="navModule3_bf" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule4-bf.ascx" TagName="navModule4_bf" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule5-bf.ascx" TagName="navModule5_bf" TagPrefix="uc1" %>
+
+<%--<%@ Register Src="~/commoncontrols/navigation/navModule6-bf.ascx" TagName="navModule6_bf" TagPrefix="uc1" %>--%>
+
+<%@ Register Src="~/commoncontrols/navigation/navModule1-bn.ascx" TagName="navModule1_bn" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule2-bn.ascx" TagName="navModule2_bn" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule3-bn.ascx" TagName="navModule3_bn" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule4-bn.ascx" TagName="navModule4_bn" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule5-bn.ascx" TagName="navModule5_bn" TagPrefix="uc1" %>
+
+<%--<%@ Register Src="~/commoncontrols/navigation/navModule6-bn.ascx" TagName="navModule6_bn" TagPrefix="uc1" %>--%>
+
+
+<%@ Register Src="~/commoncontrols/navigation/navModule1-no.ascx" TagName="navModule1_no" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule2-no.ascx" TagName="navModule2_no" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule3-no.ascx" TagName="navModule3_no" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule4-no.ascx" TagName="navModule4_no" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule5-no.ascx" TagName="navModule5_no" TagPrefix="uc1" %>
+
+<%--<%@ Register Src="~/commoncontrols/navigation/navModule6-no.ascx" TagName="navModule6_no" TagPrefix="uc1" %>--%>
+
+<%@ Register Src="~/commoncontrols/navigation/navModule1-ro.ascx" TagName="navModule1_ro" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule2-ro.ascx" TagName="navModule2_ro" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule3-ro.ascx" TagName="navModule3_ro" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule4-ro.ascx" TagName="navModule4_ro" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule5-ro.ascx" TagName="navModule5_ro" TagPrefix="uc1" %>
+
+<%--<%@ Register Src="~/commoncontrols/navigation/navModule6-ro.ascx" TagName="navModule6_ro" TagPrefix="uc1" %>--%>
+
+<%@ Register Src="~/commoncontrols/navigation/navModule1-el.ascx" TagName="navModule1_el" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule2-el.ascx" TagName="navModule2_el" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule3-el.ascx" TagName="navModule3_el" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule4-el.ascx" TagName="navModule4_el" TagPrefix="uc1" %>
+<%@ Register Src="~/commoncontrols/navigation/navModule5-el.ascx" TagName="navModule5_el" TagPrefix="uc1" %>
+
+<%--<%@ Register Src="~/commoncontrols/navigation/navModule6-el.ascx" TagName="navModule6_el" TagPrefix="uc1" %>--%>
+
+<asp:Content ID="head" ContentPlaceHolderID="head" runat="Server">
+</asp:Content>
+<asp:Content ID="contentBreadcrumb1" ContentPlaceHolderID="contentBreadcrumb" runat="Server">
+	<asp:ContentPlaceHolder ID="contentBreadcrumb" runat="server">
+	</asp:ContentPlaceHolder>
+	<div class="prevnext">
+		<a href="#" class="btnprev"><< <%="navPreviousSection".TranslateWith("frontend.master")%></a> <a href="#" class="btnnext"><%="navNextSection".TranslateWith("frontend.master")%> >></a>
+	</div>
+</asp:Content>
+<asp:Content ID="contentMain1" ContentPlaceHolderID="contentMain" runat="Server">
+	<div class="sidebar">
+		<div id="sidebarmenu">
+			<asp:Panel ID="pnlModuleNav" runat="server">
+				<uc1:navModule1 ID="navModule1" runat="server" Visible="false" />
+				<uc1:navModule1_es ID="navModule1_es" runat="server" Visible="false" />
+				<uc1:navModule2 ID="navModule2" runat="server" Visible="false" />
+				<uc1:navModule2_es ID="navModule2_es" runat="server" Visible="false" />
+				<uc1:navModule3 ID="navModule3" runat="server" Visible="false" />
+				<uc1:navModule3_es ID="navModule3_es" runat="server" Visible="false" />
+				<uc1:navModule4 ID="navModule4" runat="server" Visible="false" />
+				<uc1:navModule4_es ID="navModule4_es" runat="server" Visible="false" />
+				<uc1:navModule5 ID="navModule5" runat="server" Visible="false" />
+				<uc1:navModule5_es ID="navModule5_es" runat="server" Visible="false" />
+
+                <uc1:navModule6 ID="navModule6" runat="server" Visible="false" />
+                <%--<uc1:navModule6_es ID="navModule6_es" runat="server" Visible="false" />--%>
+
+				<uc1:navModule1_de ID="navModule1_de" runat="server" Visible="false" />
+				<uc1:navModule1_it ID="navModule1_it" runat="server" Visible="false" />
+				<uc1:navModule2_de ID="navModule2_de" runat="server" Visible="false" />
+				<uc1:navModule2_it ID="navModule2_it" runat="server" Visible="false" />
+				<uc1:navModule3_de ID="navModule3_de" runat="server" Visible="false" />
+				<uc1:navModule3_it ID="navModule3_it" runat="server" Visible="false" />
+				<uc1:navModule4_de ID="navModule4_de" runat="server" Visible="false" />
+				<uc1:navModule4_it ID="navModule4_it" runat="server" Visible="false" />
+				<uc1:navModule5_de ID="navModule5_de" runat="server" Visible="false" />
+				<uc1:navModule5_it ID="navModule5_it" runat="server" Visible="false" />
+
+               <%-- <uc1:navModule6_de ID="navModule6_de" runat="server" Visible="false" />
+				<uc1:navModule6_it ID="navModule6_it" runat="server" Visible="false" />--%>
+
+				<uc1:navModule1_cz ID="navModule1_cz" runat="server" Visible="false" />
+				<uc1:navModule2_cz ID="navModule2_cz" runat="server" Visible="false" />
+				<uc1:navModule3_cz ID="navModule3_cz" runat="server" Visible="false" />
+				<uc1:navModule4_cz ID="navModule4_cz" runat="server" Visible="false" />
+				<uc1:navModule5_cz ID="navModule5_cz" runat="server" Visible="false" />
+
+                <%--<uc1:navModule6_cz ID="navModule6_cz" runat="server" Visible="false" />--%>
+
+                <uc1:navModule1_fr ID="navModule1_fr" runat="server" Visible="false" />
+                <uc1:navModule2_fr ID="navModule2_fr" runat="server" Visible="false" />
+                <uc1:navModule3_fr ID="navModule3_fr" runat="server" Visible="false" />
+                <uc1:navModule4_fr ID="navModule4_fr" runat="server" Visible="false" />
+                <uc1:navModule5_fr ID="navModule5_fr" runat="server" Visible="false" />
+
+                <%--<uc1:navModule6_fr ID="navModule6_fr" runat="server" Visible="false" />--%>
+
+                <uc1:navModule1_nl ID="navModule1_nl" runat="server" Visible="false" />
+                <uc1:navModule2_nl ID="navModule2_nl" runat="server" Visible="false" />
+                <uc1:navModule3_nl ID="navModule3_nl" runat="server" Visible="false" />
+                <uc1:navModule4_nl ID="navModule4_nl" runat="server" Visible="false" />
+                <uc1:navModule5_nl ID="navModule5_nl" runat="server" Visible="false" />
+
+                 <%--<uc1:navModule6_nl ID="navModule6_nl" runat="server" Visible="false" />--%>
+
+                <uc1:navModule1_pl ID="navModule1_pl" runat="server" Visible="false" />
+                <uc1:navModule2_pl ID="navModule2_pl" runat="server" Visible="false" />
+                <uc1:navModule3_pl ID="navModule3_pl" runat="server" Visible="false" />
+                <uc1:navModule4_pl ID="navModule4_pl" runat="server" Visible="false" />
+                <uc1:navModule5_pl ID="navModule5_pl" runat="server" Visible="false" />
+
+                 <%--<uc1:navModule6_pl ID="navModule6_pl" runat="server" Visible="false" />--%>
+
+                <uc1:navModule1_at ID="navModule1_at" runat="server" Visible="false" />
+                <uc1:navModule2_at ID="navModule2_at" runat="server" Visible="false" />
+                <uc1:navModule3_at ID="navModule3_at" runat="server" Visible="false" />
+                <uc1:navModule4_at ID="navModule4_at" runat="server" Visible="false" />
+                <uc1:navModule5_at ID="navModule5_at" runat="server" Visible="false" /> 
+
+                 <%--<uc1:navModule6_at ID="navModule6_at" runat="server" Visible="false" />--%> 
+
+                <uc1:navModule1_sd ID="navModule1_sd" runat="server" Visible="false" />
+                <uc1:navModule2_sd ID="navModule2_sd" runat="server" Visible="false" />
+                <uc1:navModule3_sd ID="navModule3_sd" runat="server" Visible="false" />
+                <uc1:navModule4_sd ID="navModule4_sd" runat="server" Visible="false" />
+                <uc1:navModule5_sd ID="navModule5_sd" runat="server" Visible="false" /> 
+
+                <%--<uc1:navModule6_sd ID="navModule6_sd" runat="server" Visible="false" />--%> 
+
+                <uc1:navModule1_sf ID="navModule1_sf" runat="server" Visible="false" />
+                <uc1:navModule2_sf ID="navModule2_sf" runat="server" Visible="false" />
+                <uc1:navModule3_sf ID="navModule3_sf" runat="server" Visible="false" />
+                <uc1:navModule4_sf ID="navModule4_sf" runat="server" Visible="false" />
+                <uc1:navModule5_sf ID="navModule5_sf" runat="server" Visible="false" />
+
+                 <%--<uc1:navModule6_sf ID="navModule6_sf" runat="server" Visible="false" />--%>
+
+                <uc1:navModule1_bf ID="navModule1_bf" runat="server" Visible="false" />
+                <uc1:navModule2_bf ID="navModule2_bf" runat="server" Visible="false" />
+                <uc1:navModule3_bf ID="navModule3_bf" runat="server" Visible="false" />
+                <uc1:navModule4_bf ID="navModule4_bf" runat="server" Visible="false" />
+                <uc1:navModule5_bf ID="navModule5_bf" runat="server" Visible="false" />
+
+                <%--  <uc1:navModule6_bf ID="navModule6_bf" runat="server" Visible="false" />--%>
+
+                <uc1:navModule1_bn ID="navModule1_bn" runat="server" Visible="false" />
+                <uc1:navModule2_bn ID="navModule2_bn" runat="server" Visible="false" />
+                <uc1:navModule3_bn ID="navModule3_bn" runat="server" Visible="false" />
+                <uc1:navModule4_bn ID="navModule4_bn" runat="server" Visible="false" />
+                <uc1:navModule5_bn ID="navModule5_bn" runat="server" Visible="false" />
+
+             <%--    <uc1:navModule6_bn ID="navModule6_bn" runat="server" Visible="false" />--%>
+
+                <uc1:navModule1_no ID="navModule1_no" runat="server" Visible="false" />
+                <uc1:navModule2_no ID="navModule2_no" runat="server" Visible="false" />
+                <uc1:navModule3_no ID="navModule3_no" runat="server" Visible="false" />
+                <uc1:navModule4_no ID="navModule4_no" runat="server" Visible="false" />
+                <uc1:navModule5_no ID="navModule5_no" runat="server" Visible="false" />
+
+                <%-- <uc1:navModule6_no ID="navModule6_no" runat="server" Visible="false" />--%>
+
+                
+                 <uc1:navModule1_ro ID="navModule1_ro" runat="server" Visible="false" />
+                <uc1:navModule2_ro ID="navModule2_ro" runat="server" Visible="false" />
+                <uc1:navModule3_ro ID="navModule3_ro" runat="server" Visible="false" />
+                <uc1:navModule4_ro ID="navModule4_ro" runat="server" Visible="false" />
+                <uc1:navModule5_ro ID="navModule5_ro" runat="server" Visible="false" />
+
+            <%--    <uc1:navModule6_ro ID="navModule6_ro" runat="server" Visible="false" />--%>
+
+                 <uc1:navModule1_el ID="navModule1_el" runat="server" Visible="false" />
+                <uc1:navModule2_el ID="navModule2_el" runat="server" Visible="false" />
+                <uc1:navModule3_el ID="navModule3_el" runat="server" Visible="false" />
+                <uc1:navModule4_el ID="navModule4_el" runat="server" Visible="false" />
+                <uc1:navModule5_el ID="navModule5_el" runat="server" Visible="false" />
+
+                 <%--<uc1:navModule6_el ID="navModule6_el" runat="server" Visible="false" />--%>
+
+			</asp:Panel>
+			<asp:ContentPlaceHolder ID="contentSideBar" runat="server">
+			</asp:ContentPlaceHolder>
+		</div>
+	</div>
+	<div class="modulecontent">
+		<a name="top" id="top"></a>
+		<asp:ContentPlaceHolder ID="contentMain" runat="server">
+		</asp:ContentPlaceHolder>
+		<div class="backtotop">
+			<a href="#top"><%="navBackTop".TranslateWith("frontend.master")%></a>
+		</div>
+		<div class="prevnext">
+			<a href="#" class="btnprev"><< <%="navPreviousSection".TranslateWith("frontend.master")%></a> <a href="#" class="btnnext"><%="navNextSection".TranslateWith("frontend.master")%></a> >></a>
+		</div>
+	</div>
+</asp:Content>

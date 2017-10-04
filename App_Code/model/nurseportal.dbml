@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="sciNursePortal" EntityNamespace="model" ContextNamespace="model" Class="nurseportalDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=www.hydraframe.com;Initial Catalog=sciNursePortal;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="sciNursePortalConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Invitation" Member="Invitations">
+    <Type Name="Invitation">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InvitationCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LanguageCode" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="global::EntityStatus" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ActivationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="User_Invitation" Member="User" ThisKey="UserID" OtherKey="ID" Type="User" IsForeignKey="true" />
+      <Association Name="User_Invitation1" Member="User1" ThisKey="UserID" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserBrowsing" Member="UserBrowsings">
+    <Type Name="UserBrowsing">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PageDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PageURL" Type="System.String" DbType="VarChar(2000) NOT NULL" CanBeNull="false" />
+      <Association Name="User_UserBrowsing" Member="User" ThisKey="UserID" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserLearningPoint" Member="UserLearningPoints">
+    <Type Name="UserLearningPoint">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="global::EntityStatus" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="Module" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Section" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SubSection" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Tag" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+      <Column Name="PointText" Type="System.String" DbType="NVarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="LanguageCode" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ControlNumber" Type="System.Int32" DbType="Int" CanBeNull="false" />
+      <Association Name="User_UserLearningPoint" Member="User" ThisKey="UserID" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserQuiz" Member="UserQuizs">
+    <Type Name="UserQuiz">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Module" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QuizType" Type="global::QuizType" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="LanguageCode" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CompleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Score" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="global::EntityStatus" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="QuizID" Type="System.Int32" DbType="Int" CanBeNull="false" />
+      <Association Name="UserQuiz_UserQuizAnswer" Member="UserQuizAnswers" ThisKey="ID" OtherKey="UserQuizID" Type="UserQuizAnswer" />
+      <Association Name="User_UserQuiz" Member="User" ThisKey="UserID" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserQuizAnswer" Member="UserQuizAnswers">
+    <Type Name="UserQuizAnswer">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserQuizID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QuestionTag" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="QuestionText" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Answer" Type="System.String" DbType="NVarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="DisplayDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="AnswerDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IsCorrect" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="QuestionNumber" Storage="_Module" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QuestionType" Type="global::QuestionType" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="UserQuiz_UserQuizAnswer" Member="UserQuiz" ThisKey="UserQuizID" OtherKey="ID" Type="UserQuiz" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserType" Type="global::UserType" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="global::EntityStatus" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="DefaultLanguageCode" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Address1" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Address2" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PostalCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Profession" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Language" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SurveyDoesCountryRecognize" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SurveyConsiderNurse" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SurveyTimeSeeingPatients" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SurveyTimeSeeingNonPatients" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SurveyYearsQualified" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SurveyYearsMSPatients" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SurveyMSCarePatients" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SurveyCertificateRCN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SurveyCertificateICN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SurveyMSPortionRelapsing" Type="System.String" DbType="Varchar(50)" CanBeNull="true" />
+      <Column Name="SurveyMSPortionSecondary" Type="System.String" DbType="Varchar(50)" CanBeNull="true" />
+      <Column Name="SurveyMSPortionPrimary" Type="System.String" DbType="Varchar(50)" CanBeNull="true" />
+      <Column Name="SurveyCertificateNMBI" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="User_Invitation" Member="Invitations" ThisKey="ID" OtherKey="UserID" Type="Invitation" />
+      <Association Name="User_Invitation1" Member="Invitations1" ThisKey="ID" OtherKey="UserID" Type="Invitation" />
+      <Association Name="User_UserBrowsing" Member="UserBrowsings" ThisKey="ID" OtherKey="UserID" Type="UserBrowsing" />
+      <Association Name="User_UserLearningPoint" Member="UserLearningPoints" ThisKey="ID" OtherKey="UserID" Type="UserLearningPoint" />
+      <Association Name="User_UserQuiz" Member="UserQuizs" ThisKey="ID" OtherKey="UserID" Type="UserQuiz" />
+      <Association Name="User_UserLogin" Member="UserLogins" ThisKey="ID" OtherKey="UserID" Type="UserLogin" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserLogin" Member="UserLogins">
+    <Type Name="UserLogin">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LanguageCode" Type="System.String" DbType="Char(2) NOT NULL" CanBeNull="false" />
+      <Column Name="LoginDate" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="User_UserLogin" Member="User" ThisKey="UserID" OtherKey="ID" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SearchResult" Member="SearchResults">
+    <Type Name="SearchResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SearchKeywordID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PageID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(2000) NOT NULL" CanBeNull="false" />
+      <Column Name="Path" Type="System.String" DbType="VarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="MatchCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SearchContent" Member="SearchContents">
+    <Type Name="SearchContent">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PageContent" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SearchKeyword" Member="SearchKeywords">
+    <Type Name="SearchKeyword">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Keywords" Type="System.String" DbType="NVarChar(2000) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,300 @@
+﻿.wrapper
+{
+	background-color: #ffffff;
+	width: 1000px;
+	min-height: 700px;
+	margin: 20px auto 10px auto;
+	border: 2px solid #333333;
+	border-radius: 25px;	
+}
+
+.header
+{
+	background-image: url(../images/frontend/master/stars.png);
+	background-repeat: no-repeat;	
+	background-position: 300px 10px;
+	position: relative;
+	width: 100%;
+	height: 312px;
+	border-bottom: 1px solid #233d7d;
+	font-size: 10px;
+}
+#Img2 {
+	width: 95%;
+	margin: 0 20px;
+}
+
+.otherlang1{
+    text-align: center;
+}
+
+.header #logo
+{
+	position: absolute;
+	left: 20px;
+	top: 20px;
+}
+
+.header .toplinks
+{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.header .toplinks img
+{
+	vertical-align: top;
+}
+
+.header .toplinks .linklist
+{
+	list-style-type: none;
+}
+
+.header .toplinks .linklist li
+{
+	float: left;
+	border-right: 1px solid #233d7d;
+	padding: 5px 10px;
+}
+
+.header .toplinks .linklist li:first-child,
+.header .toplinks .linklist li:last-child
+{
+	border: 0;
+}
+
+.header .searchbox
+{
+	position: absolute;
+	right: 20px;
+	top: 50px;
+	background-image: url(../images/frontend/master/search_field.png);
+	background-repeat: no-repeat;	
+	width: 244px;
+	height: 30px;	
+}
+
+.header .searchbox .txt
+{
+	border: 0;
+	margin: 7px 15px;
+	width: 180px;
+}
+
+.header .searchbox .btn
+{
+	vertical-align: text-bottom;
+}
+
+.header .mainnav
+{
+	position: absolute;
+	right: 20px;
+	bottom: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.header .mainnav li
+{
+	float: left;
+	background-color: #e1e6f0;
+	color: #233d7d;
+	border: 1px solid #233d7d;
+	border-bottom: 0;
+	padding: 2px 5px;
+	margin: 0 2px;
+	font-size: 12px;
+}
+
+.header .mainnav li.selected,
+.header .mainnav li:hover
+{
+	background-color: #233d7d;
+	color: #e1e6f0;
+}
+
+.header .mainnav li a
+{
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.header .mainnav li.selected a,
+.header .mainnav li:hover a
+{
+	color: #e1e6f0;	
+}
+
+.footer
+{
+	width: 1000px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.footer ul
+{
+    list-style-type: none;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.footer ul li
+{
+    float: left;   
+    border-right: 1px solid #333333;     
+    padding: 0px 5px;
+    margin: 0 0 0 0;
+}
+
+.footer ul li:last-child
+{
+    border: 0;
+}
+
+.footer ul li a
+{
+    text-decoration: none;
+    font-size: 11px;
+    color: #333333;
+}
+
+.footer .footer-anchor
+{
+  /*  margin: 0 70px 0 100px;    */
+}
+
+.modulenav
+{
+	list-style-type: none;
+	margin: 10px 0;
+	padding: 0 18px;
+}
+
+.modulenav li
+{
+	float: left;
+	margin: 0 1px;
+	padding: 0;
+}
+
+.modulenav li:last-child
+{
+	margin-left: 1px;
+}
+
+.modulenav li img
+{
+	vertical-align: middle;
+}
+
+.breadcrumb
+{
+	padding: 10px 20px;
+	clear: both;
+	font-size: 10px;
+	position: relative;
+}
+
+.content
+{
+	padding: 5px 20px 20px 20px;
+	clear: both;
+	position: relative;
+}
+
+.sidebar
+{
+    padding: 0;  
+    position: absolute;
+}
+
+#sidebarmenu
+{
+	width: 250px;
+	position: absolute;
+	top: 0;
+	text-align: center;
+}
+
+.modulecontent
+{
+    margin: 0 0 0 260px;
+    padding: 0 0 50px 10px;
+	border-left: 1px solid #505589;
+	min-height: 700px;
+}
+
+.cleaner
+{
+	clear: both;
+}
+
+/**12-9-14*/
+.logo {
+    width:422px;
+    float:left;
+    margin:20px 0 0 20px;
+}
+.logo_2 {
+    float:left;
+    width:336px;
+    margin-top:20px;
+}
+.logo_2 a {
+    cursor:pointer;
+}
+
+
+ .sglogo {
+  left: 55px;
+  position: relative;
+  top: -5px;
+}
+ 
+   #otherlang {
+  margin-left: 20px;
+  margin-top: 29px;
+}
+    /*.header.germanback.sglogo1 {
+  background-image: none;
+}*/
+     .germanback .sglogo1 {
+  left: 11px;
+  top: -12px;
+}
+     .germanback .sglogo {
+  left: 12px;
+  top: -33px;
+}
+      .germanback .swissde {
+  left: 12px;
+  top: -33px;
+}
+     .germanback .swissde {
+  /*left: 70px;*/
+   left: 26px;
+  top: -33px;
+}
+     .sglogo1 {
+  left: 55px;
+  position: relative;
+  top: -5px;
+}
+.abc li {
+	width: 147px;
+}
+.abc li img{
+    width: 100%;
+    height: 42px;
+}
+.abc li:nth-child(3) {
+  width: 195px;
+}
+.abc li:nth-child(2) {
+  width: 169px;
+}
+

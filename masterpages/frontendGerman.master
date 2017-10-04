@@ -1,0 +1,193 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="frontendGerman.master.cs" Inherits="masterpages_frontendGerman" %>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<%@ Register Src="../commoncontrols/navigation/navModule1.ascx" TagName="navModule1"
+    TagPrefix="uc1" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Nurse Portal</title>
+
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0.0)" />
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0.0)" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="Stylesheet" type="text/css" href="~/css/frontend.css" />
+    <link rel="Stylesheet" type="text/css" href="~/css-secondary/secondary.css" />
+<!--<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>-->
+<script src="<%= DataPersistence.ApplicationPath %>/js/jquery-1.7.2.min.js"
+        type="text/javascript"></script>
+<script src="<%= DataPersistence.ApplicationPath %>/js/jquery-ui-1.8.21.custom.min.js"
+        type="text/javascript"></script>
+    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="<%= DataPersistence.ApplicationPath %>/js/jqueryHelpers.js"></script>
+    <script type="text/javascript" src="<%= DataPersistence.ApplicationPath %>/js/nav.js"></script>
+    <script type="text/javascript" src="<%= DataPersistence.ApplicationPath %>/js/popups.js"></script>
+    <script type="text/javascript" src="<%= DataPersistence.ApplicationPath %>/js/input.js"></script>
+    <script type="text/javascript" src="<%= DataPersistence.ApplicationPath %>/js/content.js"></script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-39173293-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <telerik:RadScriptManager ID="scriptManager" runat="server">
+	</telerik:RadScriptManager>
+    
+    <div class="wrapper">
+		<div class="header germanback">
+			<%--<a href="<%= DataPersistence.ApplicationPath %>/index<%= DataPersistence.SiteLanguagePostfix %>.aspx"><img src="~/images/frontend/master/logo_de_updated.jpg" alt="logo" id="logo" runat="server" /></a>--%>
+            <div class="germande">
+			<%--<div class="logo">--%>
+                <a href="<%= DataPersistence.ApplicationPath %>/index<%= DataPersistence.SiteLanguagePostfix %>.aspx"><img id="otherlang" src="~/images/frontend/master/logo.png" alt="logo" runat="server" /></a>
+                <a id="german" href="http://www.dmsg.de/service/index.php?w3pid=service&kategorie=msfortbildungen&kategorie2=fbmsschwester" target="_blank" onclick="window.open('http://www.dmsg.de/service/index.php?w3pid=service&kategorie=msfortbildungen&kategorie2=fbmsschwester', '_blank', 'width=1000, height=auto, left=100,top=100,scrollbars=yes');return false">
+                    <img class="sglogo1" id="germande" src="~/images/frontend/master/logo-ge.png" alt="logo" runat="server" /></a>
+                <a href="http://www.dmsg.de/service/index.php?w3pid=service&kategorie=msfortbildungen&kategorie2=fbmsschwester" target="_blank" onclick="window.open('https://www.multiplesklerose.ch/de/', '_blank', 'width=1000, height=auto, left=100,top=100,scrollbars=yes');return false">
+                    <img class="sglogo swissde" id="swissde" src="~/images/frontend/master/logo-de.png" alt="logo" runat="server" /></a>
+                <a href="http://www.dmsg.de/service/index.php?w3pid=service&kategorie=msfortbildungen&kategorie2=fbmsschwester" target="_blank" onclick="window.open('http://www.dmsg.de/service/index.php?w3pid=service&kategorie=msfortbildungen&kategorie2=fbmsschwester', '_blank', 'width=1000, height=auto, left=100,top=100,scrollbars=yes');return false">
+                    <img class="sglogo" id="austriaat" src="~/images/frontend/master/logo-at.png" alt="logo" runat="server" /></a>
+			<%--</div>--%>
+           <%-- <div class="logo_2"><a href="http://www.dmsg.de"><img src="~/images/frontend/master/DMSG_logo_updated.jpg" alt="logo" runat="server" /></a></div>--%>
+            </div>
+			<asp:Panel ID="pnlTopLinksPublic" runat="server" CssClass="toplinks">
+				
+				<ul class="linklist">
+					<%--<li><b><%="ChangeLanguage".TranslateWith("frontend.master")%></b></li>--%>
+					<%--<li><asp:ImageButton ID="btnFlagEnglish" runat="server" ImageUrl="~/images/frontend/master/flag_en.jpg" AlternateText="en" ToolTip="English" CssClass="btn" OnClick="btnChangeLanguage_Click" />
+                    <asp:ImageButton ID="btnFlagIrish" runat="server" ImageUrl="~/images/frontend/master/flag_ie.jpg" AlternateText="ie" ToolTip="Irish" CssClass="btn" OnClick="btnChangeLanguage_Click" />
+					<asp:ImageButton ID="btnFlagSpanish" runat="server" ImageUrl="~/images/frontend/master/flag_es.jpg" AlternateText="es" ToolTip="Español" CssClass="btn" OnClick="btnChangeLanguage_Click" />
+                    <asp:ImageButton ID="btnFlagItaly" runat="server" ImageUrl="~/images/frontend/master/flag_it.jpg" AlternateText="it" ToolTip="Italiano" CssClass="btn" OnClick="btnChangeLanguage_Click" />
+                    <asp:ImageButton ID="btnFlagGermany" runat="server" ImageUrl="~/images/frontend/master/flag_de.jpg" AlternateText="de" ToolTip="Deutsch" CssClass="btn" OnClick="btnChangeLanguage_Click" />
+                    <asp:ImageButton ID="btnFlagCzech" runat="server" ImageUrl="~/images/frontend/master/flag_cz.jpg" AlternateText="cz" ToolTip="Český" CssClass="btn" OnClick="btnChangeLanguage_Click" />
+                    <asp:ImageButton ID="btnFlagFrench" runat="server" ImageUrl="~/images/frontend/master/flag_fr.jpg" AlternateText="fr" ToolTip="French" CssClass="btn" OnClick="btnChangeLanguage_Click" />
+                    <asp:ImageButton ID="btnFlagDutch" runat="server" ImageUrl="~/images/frontend/master/flag_nl.jpg" AlternateText="nl" ToolTip="Dutch" CssClass="btn" OnClick="btnChangeLanguage_Click" />
+                    <asp:ImageButton ID="btnFlagPolish" runat="server" ImageUrl="~/images/frontend/master/flag_pl.jpg" AlternateText="pl" ToolTip="Polski" CssClass="btn" OnClick="btnChangeLanguage_Click" />
+
+                 </li> --%>
+					<li><a href="<%= DataPersistence.ApplicationPath %>/register<%= DataPersistence.SiteLanguagePostfix %>.aspx"><%="Register".TranslateWith("frontend.master")%></a></li>
+                    <% if (DataPersistence.UserID == 0)
+                       { %>
+					<li><a href="<%= DataPersistence.ApplicationPath %>/login<%= DataPersistence.SiteLanguagePostfix %>.aspx"><%="SignIn".TranslateWith("frontend.master")%></a></li>
+                    <% }
+                       else
+                       { %>
+                    <li><a href="<%= DataPersistence.ApplicationPath %>/logout.aspx"><%="SignOut".TranslateWith("frontend.master")%></a></li>
+                    <% } %>
+					<li><%--<b><%="Language".TranslateWith("frontend.master")%></b>--%>&nbsp;<asp:Image ID="imgCurrentLang" runat="server" ImageUrl="~/images/frontend/master/flag_en.jpg" CssClass="btn" />
+                        <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                             <asp:ListItem value="en">England</asp:ListItem>
+                            <asp:ListItem value="ie">Ireland </asp:ListItem>
+                            <asp:ListItem value="es">España </asp:ListItem>
+                            <asp:ListItem value="it">Italia </asp:ListItem>
+                            <asp:ListItem value="de">Deutschland</asp:ListItem>
+                            <asp:ListItem value="cz">Česká republika</asp:ListItem>
+                           <asp:ListItem value="fr">France</asp:ListItem>
+                            <asp:ListItem value="nl">Nederlands</asp:ListItem>
+                             <asp:ListItem value="pl">Polska</asp:ListItem>
+                            <asp:ListItem Value="sd">Schweiz (DE)</asp:ListItem>
+                            <asp:ListItem Value="sf">Suisse (FR)</asp:ListItem>
+                            <asp:ListItem Value="si">Svizzera (IT)</asp:ListItem>
+                            <asp:ListItem Value="bn">België (NL)</asp:ListItem>
+                            <asp:ListItem Value="bf">Belgique (FR)</asp:ListItem>
+                            <asp:ListItem Value="at">Österreich</asp:ListItem>  
+                            <asp:ListItem Value="no">Norsk </asp:ListItem>  
+                          <asp:ListItem Value="ro">Romania</asp:ListItem>    
+                             <asp:ListItem Value="el">Ελληνικά</asp:ListItem>                   
+                        </asp:DropDownList>
+                    </li>
+				</ul>
+			</asp:Panel>
+			<asp:Panel ID="pnlSearchBox" runat="server" CssClass="searchbox" DefaultButton="btnSearch">
+				<asp:TextBox ID="txtSearch" runat="server" MaxLength="100" CssClass="txt"></asp:TextBox>
+				<asp:ImageButton ID="btnSearch" runat="server" ImageUrl="~/images/frontend/master/btn_search.png" AlternateText="search" CssClass="btn" OnClick="btnSearch_Click" />
+			</asp:Panel>
+
+             <div class="otherlang1">
+            <%-- <a href="http://mssessions.com/" target="_blank">
+                    <img id="Img1" src="~/images/frontend/master/image2.png" alt="logo" runat="server" /></a>--%>
+
+            <a href="http://mssessions.com/" target="_blank">
+                    <img id="Img2" src="~/images/frontend/master/image1.png" alt="logo" runat="server" /></a>
+               
+        </div>
+
+			<ul class="mainnav">
+				<li><a href="<%= DataPersistence.ApplicationPath %>/index<%= DataPersistence.SiteLanguagePostfix %>.aspx"><%="navHome".TranslateWith("frontend.master")%></a></li>				
+				<li><a href="<%= DataPersistence.ApplicationPath %>/mission<%= DataPersistence.SiteLanguagePostfix %>.aspx"><%="navMissionStatement".TranslateWith("frontend.master")%></a></li>
+				<li><a href="<%= DataPersistence.ApplicationPath %>/committee<%= DataPersistence.SiteLanguagePostfix %>.aspx"><%="navCommittee".TranslateWith("frontend.master")%></a></li>
+				<li><a href="<%= DataPersistence.ApplicationPath %>/accreditation<%= DataPersistence.SiteLanguagePostfix %>.aspx"><%="navAccreditation".TranslateWith("frontend.master")%></a></li>
+				<li><a href="<%= DataPersistence.ApplicationPath %>/secure/myactionplan<%= DataPersistence.SiteLanguagePostfix %>.aspx"><%="navMyActionPlan".TranslateWith("frontend.master")%></a></li>
+				<li><a href="<%= DataPersistence.ApplicationPath %>/endorsement<%= DataPersistence.SiteLanguagePostfix %>.aspx"><%="navEndorsement".TranslateWith("frontend.master")%></a></li>
+				<li><a href="<%= DataPersistence.ApplicationPath %>/resources<%= DataPersistence.SiteLanguagePostfix %>.aspx"><%="navResources".TranslateWith("frontend.master")%></a></li>
+				<li><a href="<%= DataPersistence.ApplicationPath %>/secure/glossary<%= DataPersistence.SiteLanguagePostfix %>.aspx"><%="navGlossary".TranslateWith("frontend.master")%></a></li>
+				<li><a href="<%= DataPersistence.ApplicationPath %>/contact<%= DataPersistence.SiteLanguagePostfix %>.aspx"><%="navContactUs".TranslateWith("frontend.master")%></a></li>
+			</ul>
+		</div>
+		<asp:Panel ID="pnlModules" runat="server">
+			<ul class="modulenav">
+				<li><a href="<%= DataPersistence.ApplicationPath %>/secure/modules/module1/landing<%= DataPersistence.SiteLanguagePostfix %>.aspx"><img src="<%= DataPersistence.ApplicationPath %>/images/frontend/master/btn_mod1_off-<%= DataPersistence.SiteLanguageParent %>.png" alt="Module 1" /></a></li>
+				<li><a href="<%= DataPersistence.ApplicationPath %>/secure/modules/module2/landing<%= DataPersistence.SiteLanguagePostfix %>.aspx"><img src="<%= DataPersistence.ApplicationPath %>/images/frontend/master/btn_mod2_off-<%= DataPersistence.SiteLanguageParent %>.png" alt="Module 2" /></a></li>
+				<li><a href="<%= DataPersistence.ApplicationPath %>/secure/modules/module3/landing<%= DataPersistence.SiteLanguagePostfix %>.aspx"><img src="<%= DataPersistence.ApplicationPath %>/images/frontend/master/btn_mod3_off-<%= DataPersistence.SiteLanguageParent %>.png" alt="Module 3" /></a></li>
+				<li><a href="<%= DataPersistence.ApplicationPath %>/secure/modules/module4/landing<%= DataPersistence.SiteLanguagePostfix %>.aspx"><img src="<%= DataPersistence.ApplicationPath %>/images/frontend/master/btn_mod4_off-<%= DataPersistence.SiteLanguageParent %>.png" alt="Module 4" /></a></li>
+				<li><a href="<%= DataPersistence.ApplicationPath %>/secure/modules/module5/landing<%= DataPersistence.SiteLanguagePostfix %>.aspx"><img src="<%= DataPersistence.ApplicationPath %>/images/frontend/master/btn_mod5_off-<%= DataPersistence.SiteLanguageParent %>.png" alt="Module 5" /></a></li>	
+			</ul>
+		</asp:Panel>
+		<div class="breadcrumb">
+			<asp:ContentPlaceHolder id="contentBreadcrumb" runat="server">
+        
+			</asp:ContentPlaceHolder>		
+		</div>
+		<div class="content">
+			<asp:ContentPlaceHolder id="contentMain" runat="server">
+        
+			</asp:ContentPlaceHolder>
+			<div class="cleaner"></div>
+		</div>
+		<asp:ContentPlaceHolder ID="wrapperContent" runat="server">
+	
+		</asp:ContentPlaceHolder>
+    </div>
+        <div class="footer">
+            <ul>
+                <li><a href="<%= DataPersistence.ApplicationPath %>/terms<%= DataPersistence.SiteLanguagePostfix %>.aspx"><%="navFooterTerms".TranslateWith("frontend.master")%></a></li>
+                <li><a href="<%= DataPersistence.ApplicationPath %>/privacy<%= DataPersistence.SiteLanguagePostfix %>.aspx"><%="navFooterPrivacy".TranslateWith("frontend.master")%></a></li>
+                <li class="footer-anchor"><a href="#">&copy; <%=DateTime.Now.Year %> <%="navFooterCopyright".TranslateWith("frontend.master")%></a></li>
+                <li><a href="<%= DataPersistence.ApplicationPath %>/sitemap<%= DataPersistence.SiteLanguagePostfix %>.aspx"><%="navFooterSitemap".TranslateWith("frontend.master")%></a></li>
+                <li><a href="<%= DataPersistence.ApplicationPath %>/contact<%= DataPersistence.SiteLanguagePostfix %>.aspx"><%="navFooterContact".TranslateWith("frontend.master")%></a></li>
+                <li><a href="<%= DataPersistence.ApplicationPath %>/systemrequirements<%= DataPersistence.SiteLanguagePostfix %>.aspx"><%="navFooterSystemRequirements".TranslateWith("frontend.master")%></a></li>
+            </ul>
+        </div>
+    </form>
+</body>
+</html>
+
+<%--<script type="text/javascript">
+
+
+    $(document).ready(function () {
+        $("#DropDownList1").change(function (e) {
+
+            var item = $("#DropDownList1 option:selected").text();
+            if (item == "Polska") {
+                alert("Z powodów technicznych strona internetowa zostaje czasowo zawieszona. Zostanie ponownie uruchomiona po wprowadzeniu wszystkich zmian. Za utrudnienia serdecznie przepraszamy.");
+
+                e.preventDefault();
+
+            }
+        });
+    });
+
+</script>--%>
