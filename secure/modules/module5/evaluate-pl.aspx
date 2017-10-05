@@ -56,7 +56,7 @@
                     <evaluationquestioncontrol>Wymienić strategie radzenia sobie z chorobą, które można wprowadzić w ceku wsparcia osoby z SM.</evaluationquestioncontrol>
                     <evaluationquestioncontrol>Wprowadzić niefarmakologiczne metody leczenia powszechnie występujących objawów.</evaluationquestioncontrol>
                     <evaluationquestioncontrol>Opisać rolę Pielęgniarki SM w ocenie i leczeniu objawów.</evaluationquestioncontrol>
-                    <evaluationquestioncontrol>Wymienić poszczególne etapy podstawowej opieki zdrowotnej dla mężczyzn i kobiet, które powinny mieć miejsce równocześnie z leczeniem SM.</evaluationquestioncontrol>
+                    <evaluationquestioncontrol>Wymienić poszczególne etapy podstawowej opieki zdrowotnej dla  mężczyzn i kobiet, które powinny mieć miejsce równocześnie z leczeniem SM.</evaluationquestioncontrol>
                     <evaluationquestioncontrol>Przytoczyć bieżące dane dotyczące kwestii leczenia kobiet z SM w ciąży lub karmiących piersią.</evaluationquestioncontrol>
                     <evaluationquestioncontrol>Ocenić wpływ cyklu menstruacyjnego i menopauzy na kobiety z SM.</evaluationquestioncontrol>
                     <evaluationquestioncontrol>Omówić kwestie związane ze zdrowiem seksualnym u mężczyzn i kobiet chorych na SM.</evaluationquestioncontrol>
